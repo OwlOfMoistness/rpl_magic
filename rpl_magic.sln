@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.810.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rpl_magic", "rpl_magic\rpl_magic.csproj", "{E9E8B89E-106D-4838-8A8B-226BD932AEEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9E8B89E-106D-4838-8A8B-226BD932AEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E8B89E-106D-4838-8A8B-226BD932AEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E8B89E-106D-4838-8A8B-226BD932AEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E8B89E-106D-4838-8A8B-226BD932AEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F247259B-82F8-47EC-B6EB-D47BC4E5BF9E}
+	EndGlobalSection
+EndGlobal

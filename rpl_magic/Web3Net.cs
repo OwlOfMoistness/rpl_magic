@@ -7,7 +7,7 @@ using System.Numerics;
 namespace RPLBot {
 
     public class Web3Net {
-        public static string RPC = "http://localhost:8545";
+        public static string RPC = "http://192.168.1.199:8545";
 
         public Web3Net() {
         }

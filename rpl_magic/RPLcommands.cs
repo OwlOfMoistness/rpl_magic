@@ -49,14 +49,19 @@ namespace RPLBot {
             [Command("luck", RunMode =RunMode.Async)]
         public async Task GetLuck(string address, int timestamp = 1664578800) {
             var ens = address;
+            Console.WriteLine($"1)");
             if (address.EndsWith(".eth")) {
                 address = await Web3Net.ens(address.ToLower());
             }
             if (!IsAddressValid(address)) return;
                 address = Web3Net.GetChecksumAddress(address);
+            Console.WriteLine($"2)");
             var spData = JArray.Parse(await RocketscanAPI.GetSMoothingPoolData());
+            Console.WriteLine($"3)");
             var userData = JObject.Parse(await RocketscanAPI.GetNodeData(address));
+            Console.WriteLine($"4)");
             var attestationData = JObject.Parse(await RocketscanAPI.GetAttestationData(address));
+            Console.WriteLine($"5)");
             var dict = GenerateMPDictionnary(attestationData);
             var userStack = GenerateMevStack(userData);
 

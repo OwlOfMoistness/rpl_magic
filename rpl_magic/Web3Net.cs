@@ -59,10 +59,11 @@ namespace RPLBot {
             };
 
             var web3 = new Web3(RON_RPC);
+
             var funcParams = new GetManyStakingTotals() {
                 PoolList = consensusAddresses,
             };
-            Console.WriteLine("ok");
+            Console.WriteLine(RON_RPC);
             var handler = web3.Eth.GetContractQueryHandler<GetManyStakingTotals>();
             var res = await handler.QueryAsync<List<BigInteger>>("0x545edb750eb8769c868429be9586f5857a768758", funcParams);
             Console.WriteLine("mmh");

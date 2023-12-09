@@ -8,6 +8,7 @@ namespace RPLBot {
         public static bool IsRelease = false;
         static void Main(string[] args) {
             RunBot(token: args[0], prefix: args[1]);
+            Web3Net.RON_RPC = args[2];
         }
         static void RunBot(string token, string prefix) {
             while (true) {

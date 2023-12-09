@@ -62,8 +62,10 @@ namespace RPLBot {
             var funcParams = new GetManyStakingTotals() {
                 PoolList = consensusAddresses,
             };
+            Console.WriteLine("ok");
             var handler = web3.Eth.GetContractQueryHandler<GetManyStakingTotals>();
             var res = await handler.QueryAsync<List<BigInteger>>("0x545edb750eb8769c868429be9586f5857a768758", funcParams);
+            Console.WriteLine("mmh");
             return (consensusAddresses, res);
         }
 
